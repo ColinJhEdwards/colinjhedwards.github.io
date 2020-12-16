@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  animation: fade 2s;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-color: #a87000;
+}
+
+/* header section */
+
+.header {
+  min-height: 10vh;
+  background: #003c96;
+  color: white;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 999;
+}
+
+.links {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px black;
+}
+
+.links img {
+  margin-right: 5px;
+}
+
+.links h2 {
+  flex: 3 1 40rem;
+}
+
+.links ul {
+  display: flex;
+  flex: 1 1 40rem;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+a:hover {
+  color: #a87000;
+}
+
+/* About me section */
+
+.about-me {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+  padding: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.about-me-text {
+  font-size: 3rem;
+  flex: 2 1 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-text p {
+  padding: 2rem;
+  width: 90%;
+}
+
+.about-me-text h2 {
+  padding-left: 2rem;
+}
+
+.about-me-image {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash {
+  position: absolute;
+  z-index: -1;
+  right: -20px;
+  top: -5px;
+}
+
+#me {
+  animation: wiggle 2s linear infinite alternate;
+  transform-origin: bottom;
+}
+
+#twonote {
+  animation: wiggle 3s infinite alternate linear;
+  transform-origin: bottom;
+}
+
+#eightnote {
+  animation: notes 2s infinite alternate linear;
+  /* transform-origin: bottom; */
+}
+
+/* Footer Section */
+
+footer {
+  min-height: 10vh;
+  background: rgb(54, 52, 52);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+
+/* Animations */
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+@keyframes notes {
+  from {
+    transform: rotateZ(7deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
