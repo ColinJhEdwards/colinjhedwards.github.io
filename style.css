@@ -76,7 +76,7 @@ a:hover {
   flex-wrap: wrap;
   position: relative;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
 }
 
 .about-me-text {
@@ -121,7 +121,15 @@ a:hover {
 
 #eightnote {
   animation: notes 2s infinite alternate linear;
-  /* transform-origin: bottom; */
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  margin: 3rem;
 }
 
 /* Projects section */
@@ -129,6 +137,7 @@ a:hover {
 .projects {
   min-height: 90vh;
   background-color: #e5e5e5;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); */
 }
 
 .row {
@@ -143,12 +152,65 @@ a:hover {
   height: 50rem;
   box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
   border-radius: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .row h2 {
   font-size: 2rem;
   text-align: center;
   padding: 1rem;
+}
+
+/* Contact Section */
+
+.form-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5), 0px 20px 20px rgb(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  padding: 5rem 10rem;
+}
+
+textarea,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+textarea {
+  width: 40rem;
+}
+
+button {
+  padding: 2rem 5rem;
+  background: white;
+  color: #003c96;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  cursor: pointer;
+  border: solid 2px #003c96;
+  border-radius: 1rem;
+  transition: all ease 0.5s;
+}
+
+button:hover {
+  background: #003c96;
+  color: white;
 }
 
 /* Footer Section */
