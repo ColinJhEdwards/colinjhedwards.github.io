@@ -7,7 +7,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  animation: fade 2s;
+  animation: fade 2s ease;
 }
 
 body {
@@ -88,6 +88,8 @@ a:hover {
   flex: 2 1 40rem;
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
 }
 
 .about-me-text p {
@@ -97,6 +99,16 @@ a:hover {
 
 .about-me-text h2 {
   padding-left: 2rem;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  padding-top: 35rem;
+}
+
+.social-media img {
+  margin: 3rem;
 }
 
 .about-me-image {
@@ -125,15 +137,6 @@ a:hover {
 
 #eightnote {
   animation: notes 2s infinite alternate linear;
-}
-
-.social-media {
-  display: flex;
-  align-items: center;
-}
-
-.social-media img {
-  margin: 3rem;
 }
 
 /* Projects section */
@@ -256,4 +259,9 @@ footer {
   to {
     opacity: 1;
   }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 1550px) {
 }
