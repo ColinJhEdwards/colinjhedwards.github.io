@@ -21,7 +21,6 @@ body {
 
 .active {
   text-decoration: underline;
-  text-decoration-color: #dae1e7;
 }
 
 /* header section */
@@ -224,17 +223,17 @@ textarea {
 button {
   padding: 2rem 5rem;
   background: white;
-  color: #003c96;
+  color: #142850;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   cursor: pointer;
-  border: solid 2px #003c96;
+  border: solid 2px #142850;
   border-radius: 1rem;
   transition: all ease 0.5s;
 }
 
 button:hover {
-  background: #003c96;
+  background: #142850;
   color: white;
 }
 
