@@ -21,14 +21,14 @@ body {
 
 .active {
   text-decoration: underline;
-  text-decoration-color: #a87000;
+  text-decoration-color: #dae1e7;
 }
 
 /* header section */
 
 .header {
   min-height: 10vh;
-  background: #003c96;
+  background: #142850;
   color: white;
   box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
   position: relative;
@@ -40,6 +40,10 @@ body {
 
 .header button {
   background: white;
+}
+
+.header button:hover {
+  background: #dae1e7;
 }
 
 .ham-menu img {
@@ -57,6 +61,7 @@ body {
 #myName {
   padding-left: 1rem;
   color: white;
+  text-shadow: 2px 2px black;
 }
 
 .links {
@@ -79,7 +84,7 @@ body {
 }
 
 a:hover {
-  color: #a87000;
+  color: #00909e;
 }
 
 /* About me section */
