@@ -285,6 +285,38 @@ footer {
 
 /* Media queries */
 
+/* For ipad pro */
+@media screen and (max-width: 1024px) {
+  .about-me-text {
+    font-size: 3.5rem;
+  }
+  .about-me-text h2 {
+    text-align: center;
+    padding: 0rem;
+  }
+  .about-me-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .about-me-image svg {
+    height: 300px;
+  }
+  #splash {
+    display: none;
+  }
+  .social-media {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  /* Projects section */
+  .row img {
+    height: 550px;
+  }
+}
+/* For tablets and below */
+
 @media screen and (max-width: 990px) {
   /* About me Section */
   .about-me-text {
