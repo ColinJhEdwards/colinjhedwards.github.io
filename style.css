@@ -285,5 +285,33 @@ footer {
 
 /* Media queries */
 
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 990px) {
+  /* About me Section */
+  .about-me-text {
+    font-size: 2rem;
+  }
+  .about-me-text h2 {
+    text-align: center;
+    padding: 0rem;
+  }
+  .about-me-text p {
+    width: 100%;
+    text-align: center;
+  }
+  .about-me-image svg {
+    height: 300px;
+  }
+  #splash {
+    display: none;
+  }
+  .social-media {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  /* Projects section */
+  .row img {
+    height: 250px;
+  }
 }
