@@ -23,6 +23,10 @@ body {
   text-decoration: underline;
 }
 
+.hide {
+  display: none;
+}
+
 /* header section */
 
 .header {
@@ -155,6 +159,13 @@ a:hover {
 
 #eightnote {
   animation: notes 2s infinite alternate linear;
+}
+
+.gitPreview {
+  position: absolute;
+  top: 73%;
+  left: 10px;
+  z-index: 1000;
 }
 
 /* Projects section */
