@@ -163,9 +163,13 @@ a:hover {
 
 .gitPreview {
   position: absolute;
-  top: 73%;
-  left: 10px;
+  top: 58%;
+  left: 40px;
   z-index: 1000;
+}
+
+.gitPreviewImg {
+  height: 250px;
 }
 
 /* Projects section */
