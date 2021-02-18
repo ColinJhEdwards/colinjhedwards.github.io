@@ -187,7 +187,7 @@ a:hover {
 /* Projects section */
 
 .projectHead {
-  background: #142850;
+  background: #e5e5e5;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -197,15 +197,11 @@ a:hover {
 
 .projectHead h2 {
   font-size: 3rem;
-  color: white;
-  text-shadow: 2px 2px black;
 }
 
 .projects {
   min-height: 90vh;
-  background-color: #142850;
-  color: white;
-  text-shadow: 2px 2px black;
+  background-color: #e5e5e5;
 }
 
 .row {
