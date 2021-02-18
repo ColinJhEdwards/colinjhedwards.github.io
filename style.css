@@ -101,7 +101,6 @@ a:hover {
   padding: 2rem;
   flex-wrap: wrap;
   position: relative;
-  /* overflow: hidden; */
   z-index: 1;
 }
 
@@ -219,10 +218,6 @@ a:hover {
   border-radius: 15px;
   margin-bottom: 1.5rem;
   transition: all ease 0.5s;
-}
-
-.projectImg {
-  overflow: hidden;
 }
 
 .projectImg:hover {
