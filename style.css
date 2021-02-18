@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .active {
@@ -104,6 +105,16 @@ a:hover {
   z-index: 1;
 }
 
+.revealHome {
+  min-height: 90vh;
+  min-width: 100%;
+  background: #142850;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  z-index: 9999;
+}
+
 .about-me-text {
   font-size: 3rem;
   flex: 2 1 40rem;
@@ -161,7 +172,8 @@ a:hover {
   animation: notes 2s infinite alternate linear;
 }
 
-.gitPreview {
+/*  ----Saving for later---- */
+/* .gitPreview {
   position: absolute;
   top: 58%;
   left: 40px;
@@ -170,7 +182,8 @@ a:hover {
 
 .gitPreview.anim {
   animation: animate 1s ease all;
-}
+} */
+
 /* Projects section */
 
 .projects {
