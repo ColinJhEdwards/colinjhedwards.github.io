@@ -168,10 +168,9 @@ a:hover {
   z-index: 1000;
 }
 
-.gitPreviewImg {
-  height: 250px;
+.gitPreview.anim {
+  animation: animate 1s ease all;
 }
-
 /* Projects section */
 
 .projects {
@@ -295,6 +294,15 @@ footer {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(-3rem);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
