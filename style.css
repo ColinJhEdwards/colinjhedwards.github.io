@@ -119,8 +119,7 @@ a:hover {
   flex: 2 1 40rem;
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .about-me-text p {
@@ -136,7 +135,7 @@ a:hover {
 .social-media {
   display: flex;
   align-items: center;
-  padding-top: 25rem;
+  /* padding-top: 25rem; */
 }
 
 .social-media img {
