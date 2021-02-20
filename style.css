@@ -217,7 +217,7 @@ a:hover {
 }
 
 .gitCard:hover {
-  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.7);
 }
 
 .gitCard h2 {
@@ -383,15 +383,16 @@ footer {
   }
 
   /* Projects section */
+  .row {
+    margin-right: 0px;
+  }
   .gitCard {
     width: 300px;
   }
 
   /*Contact Section */
-  .form {
-    flex-direction: column;
-  }
-  .form img {
-    height: 200px;
+  .form-section h2 {
+    margin-right: 0rem;
+    margin-left: 0rem;
   }
 }
