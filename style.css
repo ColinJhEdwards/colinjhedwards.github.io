@@ -24,6 +24,14 @@ body {
   text-decoration: underline;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .hide {
   display: none;
 }
@@ -171,18 +179,6 @@ a:hover {
   animation: notes 2s infinite alternate linear;
 }
 
-/*  ----Saving for later---- */
-/* .gitPreview {
-  position: absolute;
-  top: 58%;
-  left: 40px;
-  z-index: 1000;
-}
-
-.gitPreview.anim {
-  animation: animate 1s ease all;
-} */
-
 /* Projects section */
 
 .projectHead {
@@ -203,31 +199,40 @@ a:hover {
   background-color: #e5e5e5;
 }
 
+.gitCard {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+  width: 426px;
+  height: 146px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background: white;
+}
+
+.gitCard:hover {
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+  scale: 1.5;
+}
+
+.gitCard h2 {
+  padding: 1rem;
+}
+.gitCard p {
+  font-size: 1.2rem;
+}
+
 .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 4rem;
   flex-wrap: wrap;
-}
-
-.row img {
-  height: 500px;
-  width: 500px;
-  box-shadow: 0px 10px 10px rgb(0, 0, 0, 0.5);
-  border-radius: 15px;
-  margin-bottom: 1.5rem;
-  transition: all ease 0.5s;
-}
-
-.projectImg:hover {
-  transform: scale(1.2);
-}
-
-.row h2 {
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem;
 }
 
 /* Contact Section */
@@ -235,6 +240,7 @@ a:hover {
 .contactHead {
   min-height: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #e5e5e5;
@@ -377,8 +383,8 @@ footer {
   }
 
   /* Projects section */
-  .row img {
-    height: 250px;
+  .gitCard {
+    width: 300px;
   }
 
   /*Contact Section */
